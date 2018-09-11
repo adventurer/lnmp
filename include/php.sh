@@ -22,13 +22,13 @@ Check_Curl()
 
 PHP_with_curl()
 {
-    Get_ARM
-    if [[ "${DISTRO}" = "CentOS" && "${Is_ARM}" = "y" ]];then
+    #Get_ARM
+    #if [[ "${DISTRO}" = "CentOS" && "${Is_ARM}" = "y" ]];then
         Check_Curl
         with_curl='--with-curl=/usr/local/curl'
-    else
-        with_curl='--with-curl'
-    fi
+    #else
+    #    with_curl='--with-curl'
+    #fi
 }
 
 PHP_with_openssl()
