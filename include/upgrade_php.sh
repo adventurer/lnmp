@@ -57,7 +57,7 @@ Start_Upgrade_PHP()
     if echo "${php_version}" | grep -Eqi '^5.2.';then
         Download_Files ${Download_Mirror}/web/phpfpm/php-${php_version}-fpm-0.5.14.diff.gz php-${php_version}-fpm-0.5.14.diff.gz
     fi
-    lnmp stop
+    lnmp  php-fpm stop
 
     if [ "${Stack}" = "lnmp" ]; then
         mv /usr/local/php /usr/local/oldphp${Upgrade_Date}
@@ -206,7 +206,7 @@ EOF
         chmod +x /etc/init.d/php-fpm
         LNMP_PHP_Opt
     fi
-    lnmp start
+    lnmp  php-fpm start
     Check_PHP_Upgrade_Files
 }
 
@@ -302,7 +302,7 @@ EOF
     LNMP_PHP_Opt
 fi
 
-    lnmp start
+    lnmp  php-fpm start
     Check_PHP_Upgrade_Files
 }
 
@@ -396,7 +396,7 @@ EOF
     LNMP_PHP_Opt
 fi
 
-    lnmp start
+    lnmp  php-fpm start
     Check_PHP_Upgrade_Files
 }
 
@@ -509,7 +509,7 @@ EOF
     LNMP_PHP_Opt
 fi
 
-    lnmp start
+    lnmp  php-fpm start
     Check_PHP_Upgrade_Files
 }
 
@@ -584,7 +584,7 @@ fi
     if [ "${Stack}" != "lnmp" ]; then
         sed -i '/^LoadModule php5_module/d' /usr/local/apache/conf/httpd.conf
     fi
-    lnmp start
+    lnmp  php-fpm start
     Check_PHP_Upgrade_Files
 }
 
@@ -659,7 +659,7 @@ fi
     if [ "${Stack}" != "lnmp" ]; then
         sed -i '/^LoadModule php5_module/d' /usr/local/apache/conf/httpd.conf
     fi
-    lnmp start
+    lnmp  php-fpm start
     Check_PHP_Upgrade_Files
 }
 
