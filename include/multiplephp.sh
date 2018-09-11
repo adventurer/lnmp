@@ -106,7 +106,7 @@ Install_MPHP5.2()
     Download_Files ${Download_Mirror}/web/php/${Php_Ver}.tar.bz2 ${Php_Ver}.tar.bz2
     Download_Files ${Download_Mirror}/web/phpfpm/php-5.2.17-fpm-0.5.14.diff.gz php-5.2.17-fpm-0.5.14.diff.gz
 
-    lnmp stop
+    lnmp php-fpm stop
 
     if [[ -s /usr/local/autoconf-2.13/bin/autoconf && -s /usr/local/autoconf-2.13/bin/autoheader ]]; then
         Echo_Green "Autconf 2.13...ok"
@@ -182,7 +182,7 @@ EOF
 
     sleep 2
 
-    lnmp start
+    lnmp php-fpm start
 
     rm -rf ${cur_dir}/src/${Php_Ver}
 
@@ -198,7 +198,7 @@ EOF
 
 Install_MPHP5.3()
 {
-    lnmp stop
+    lnmp php-fpm stop
 
     cd ${cur_dir}/src
     Check_Curl
@@ -287,7 +287,7 @@ EOF
 
     sleep 2
 
-    lnmp start
+    lnmp php-fpm start
 
     rm -rf ${cur_dir}/src/${Php_Ver}
 
@@ -303,7 +303,7 @@ EOF
 
 Install_MPHP5.4()
 {
-    lnmp stop
+    lnmp php-fpm stop
 
     cd ${cur_dir}/src
     Download_Files ${Download_Mirror}/web/php/${Php_Ver}.tar.bz2 ${Php_Ver}.tar.bz2
@@ -388,7 +388,7 @@ EOF
 
     sleep 2
 
-    lnmp start
+    lnmp php-fpm start
 
     rm -rf ${cur_dir}/src/${Php_Ver}
 
@@ -404,7 +404,7 @@ EOF
 
 Install_MPHP5.5()
 {
-    lnmp stop
+    lnmp php-fpm stop
 
     cd ${cur_dir}/src
     Download_Files ${Download_Mirror}/web/php/${Php_Ver}.tar.bz2 ${Php_Ver}.tar.bz2
@@ -489,7 +489,7 @@ EOF
 
     sleep 2
 
-    lnmp start
+    lnmp php-fpm start
 
     rm -rf ${cur_dir}/src/${Php_Ver}
 
@@ -505,7 +505,7 @@ EOF
 
 Install_MPHP5.6()
 {
-    lnmp stop
+    lnmp php-fpm stop
 
     cd ${cur_dir}/src
     Download_Files ${Download_Mirror}/web/php/${Php_Ver}.tar.bz2 ${Php_Ver}.tar.bz2
@@ -590,7 +590,7 @@ EOF
 
     sleep 2
 
-    lnmp start
+    lnmp php-fpm start
 
     rm -rf ${cur_dir}/src/${Php_Ver}
 
@@ -606,7 +606,7 @@ EOF
 
 Install_MPHP7.0()
 {
-    lnmp stop
+    lnmp php-fpm stop
 
     cd ${cur_dir}/src
     Download_Files ${Download_Mirror}/web/php/${Php_Ver}.tar.bz2 ${Php_Ver}.tar.bz2
@@ -670,7 +670,7 @@ EOF
 
     sleep 2
 
-    lnmp start
+    lnmp php-fpm start
 
     rm -rf ${cur_dir}/src/${Php_Ver}
 
@@ -686,7 +686,7 @@ EOF
 
 Install_MPHP7.1()
 {
-    lnmp stop
+    lnmp php-fpm stop
 
     cd ${cur_dir}/src
     Download_Files ${Download_Mirror}/web/php/${Php_Ver}.tar.bz2 ${Php_Ver}.tar.bz2
@@ -750,7 +750,7 @@ EOF
 
     sleep 2
 
-    lnmp start
+    lnmp php-fpm start
 
     rm -rf ${cur_dir}/src/${Php_Ver}
 
@@ -766,7 +766,7 @@ EOF
 
 Install_MPHP7.2()
 {
-    lnmp stop
+    lnmp php-fpm stop
 
     cd ${cur_dir}/src
     Download_Files ${Download_Mirror}/web/php/${Php_Ver}.tar.bz2 ${Php_Ver}.tar.bz2
@@ -830,7 +830,7 @@ EOF
 
     sleep 2
 
-    lnmp start
+    lnmp php-fpm start
 
     rm -rf ${cur_dir}/src/${Php_Ver}
 
